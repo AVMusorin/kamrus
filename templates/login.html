@@ -1,0 +1,29 @@
+{% extends 'login_base.html' %}
+{% load staticfiles %}
+{% block additional_css%}
+	<link rel="stylesheet" type="text/css" href=" {% static "general/css/login.css" %} ">
+{% endblock %}
+{% block content %}
+<div class='container ' >
+	<div class='row' >
+		<div class = 'col-md-4'></div>
+		<div class='col-md-4'>
+			<form class = 'form-signin' role='form' action='' method='post'>
+				{% csrf_token %}
+				<label for='username'>Имя пользователя:</label>
+				<input type='text' class ='form-control' name='username' value='' id='username'>
+				<label for='password'>Пароль:</label>
+				<input type='password' class ='form-control' name='password' value='' id='password'>
+				<input type='submit' class='btn btn-block btn-primary btn-lg' value='Войти'>
+			</form>
+			<div class='registration'>
+				<a href=" {% url "registration" %} ">Регистрация</a> 
+				<a class='resetpassword' href=" {% url "resetpassword" %} ">Забыли пароль?</a>
+			</div>
+		<div class = 'col-md-4'></div>
+		</div>
+	</div>
+</div>
+{%endblock%}
+
+

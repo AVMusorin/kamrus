@@ -1,0 +1,30 @@
+{% extends 'profile_base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-4'></div>
+			<div class='col-md-4'>
+				<form  class = 'form-signin' role='form' action='' method='POST'> 
+    			{% csrf_token %}
+    			<label for='username'>Имя пользователя:</label>
+    			{{user_form.username}}
+    			{{user_form.username.errors}}
+    			<label for='email'>Email:</label>
+    			{{user_form.email}}
+    			{{user_form.email.errors}}
+    			<label for='password2'>Старый пароль:</label>
+    			{{user_form.password2}}
+    			{{user_form.password2.errors}}
+    			<label for='password'>Новый пароль:</label>
+    			{{user_form.password}}
+    			{{user_form.password.errors}}
+    			<label for='phone_number'>Номер телефона:</label>
+    			{{ extended_form.phone_number }}
+    			<input class='btn btn-block btn-primary btn-lg' type="submit" value="Сохранить" name='review'/>
+			</div>
+			<div class='col-md-4'></div>
+		</div>
+	</div>
+{% endblock %}

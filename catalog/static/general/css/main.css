@@ -1,0 +1,364 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+    text-shadow: 1px 1px 10px rgba(0,0,0,.4);
+}
+
+body {
+background: #e6e6e5; /* Old browsers */
+background: -moz-linear-gradient(top,  #e6e6e5 0%, #ffffff 50%, #e6e6e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e6e6e5 0%,#ffffff 50%,#e6e6e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e6e6e5 0%,#ffffff 50%,#e6e6e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e5', endColorstr='#e6e6e5',GradientType=0 ); /* IE6-9 */
+   
+}
+
+/*FONTS*/
+
+@font-face {
+    font-family: BloggerSans; 
+    src: url(../fonts/Bloggersans.ttf);
+}
+
+@font-face {
+    font-family: BloggerSansBold; 
+    src: url(../fonts/Bloggersansbold.ttf);
+}
+
+@font-face {
+    font-family: BloggerSansItalic; 
+    src: url(../fonts/Bloggersansitalic.ttf);
+}
+
+@font-face {
+    font-family: BloggerSansLight; 
+    src: url(../fonts/Bloggersanslight.ttf);
+}
+
+@font-face {
+    font-family: Heathergreen; 
+    src: url(../fonts/Heathergreen.otf);
+}
+
+@font-face {
+    font-family: Carlito; 
+    src: url(../fonts/Carlito-Regular.ttf);
+}
+
+@font-face {
+    font-family: CarlitoBold; 
+    src: url(../fonts/Carlito-Bold.ttf);
+}
+
+@font-face {
+    font-family: CarlitoItalic; 
+    src: url(../fonts/Carlito-Italic.ttf);
+}
+.nav-row {
+    margin-top: 20px;    
+}
+
+.logo {
+     margin: 0 auto;
+}
+
+.logo-container {
+    text-align: center;    
+}
+
+/*MENU NAVIGATION*/
+
+.nav {
+    height: 36px;
+    width: 45px;  
+    background: url(../img/menu.png) no-repeat;
+    z-index: 9999;
+    margin-left: 10px;
+}
+
+.in-nav{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+/* Контэйнер обертка для всего меню */
+.in-nav:hover{
+    background: rgba(0,0,0,.0);
+    width: 970px;
+    height: 440px;   
+}
+
+/* Контэйнер для блока с каталогом */
+.container-nav {
+    width: 640px;
+    height: 430px;
+    margin-top: 5px;
+    margin-left: 55px;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    display: inline-block
+}
+
+/* Контэйнер для блока с остальной информацией (меньшего размера) */
+.container-nav-mini {
+    position: absolute;
+    top: 0;
+    left: 705px;
+    width: 260px;
+    height: 430px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+}
+
+/* С учетом отступа родительского блока в 50px */
+.room1 {
+    position: absolute;
+    top: 40px;
+    left: 90px; 
+    width: 172px;
+    height: 132px;
+    background: url('../img/rooms_sprite.png')
+}
+
+.room2 {
+    position: absolute;
+    top: 40px;
+    left: 285px;
+    width: 167px;
+    height: 132px;
+    background: url('../img/rooms_sprite.png');
+    background-position: 167px 0;
+}
+
+.room3 {
+    position: absolute;
+    top: 40px;
+    left: 487px;
+    width: 167px;
+    height: 132px;
+    background: url('../img/rooms_sprite.png');
+    background-position: 334px 0;
+}
+
+.room4 {
+    position: absolute;
+    top: 250px;
+    left: 90px; 
+    width: 166px;
+    height: 132px;
+    background: url('../img/rooms_sprite.png');
+    background-position: 499px 0;
+}
+
+.room5 {
+    position: absolute;
+    top: 250px;
+    left: 285px; 
+    width: 167px;
+    height: 132px;
+    background: url('../img/rooms_sprite.png');
+    background-position: 666px 0;
+    
+}
+
+/*СЛАЙДЕР*/
+
+#carousel {
+    margin-top: 40px;
+}
+
+/* MAIN */
+
+.new-goods{
+    margin-top: 80px;
+}
+
+.right {
+    text-align: right;
+}
+
+.old-price {
+    font: 28px BloggerSans;
+    color: rgba(239,216,26,.7);
+    text-decoration: line-through;
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+
+.price {
+    font: 46px BloggerSansBold;
+    color: #efd81a;   
+    letter-spacing: 3px;
+}
+
+.price span {
+    font-size: 28px;
+}
+
+.old-price span {
+    font-size: 18px;
+}
+
+.new-goods:nth-child(3) .image {
+    margin-top: -70px;
+}
+
+.new-goods h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 75px Heathergreen;
+}
+
+.new-goods h3 {
+    margin-top: 0;
+    font: 18px BloggerSans;   
+    text-transform: uppercase;
+    color: rgba(96,96,96,.7);
+}
+
+.more {
+    font: 18px BloggerSans;
+    color: rgba(23,33,87,.7);
+    margin-top: 50px;
+    position: relative;
+}
+
+
+/*Стрелочки к "узнай больше"*/
+/*
+.more::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background: url('../img/arrows.png');
+    width: 70px;
+    height: 8px;
+}
+
+*/
+
+
+.more:hover{
+    color: rgb(23,33,87);
+}
+
+.image-first {
+    float: right;
+}
+
+.image{
+    padding: 0;
+}
+
+.title {
+    font: 24px BloggerSansLight;
+    color: #172157;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Популярные товары */
+.popular {
+    margin-top: 50px;
+}
+
+/*Текст в популярные товарах*/
+.text {
+    text-align: center;
+    color: #000;
+}
+
+.text p {
+    font: 12px BloggerSans;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.text h6 {
+    font: 48px Heathergreen;    
+}
+
+.narrow, .wide {
+    position: relative;
+}
+
+.narrow .text {
+    position: absolute;
+    left: 110px;
+}
+
+    
+.wide .text {
+    position: absolute;
+    top: 0;
+    left: 260px;
+}
+
+/* Нужна помощь */
+
+.help {
+    margin-top: 50px;
+    height: 400px;
+    border: 5px solid #efd81a;
+}
+
+.need-help {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.need-help h3 {
+    font: 26px BloggerSans;
+    color: rgba(0,0,0,.6);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.need-help h1 {
+    margin-top: -15px;
+    font: 70px Heathergreen;
+    text-transform: uppercase;
+}
+
+.help .form {
+    margin-top: 120px;  
+    text-align: center;
+}
+
+
+.help .form p {
+    font: 14px Carlito;   
+    margin-bottom: 30px;
+}
+
+.help .form a {
+    margin-top: 20px;
+    color: #172157;
+    font: 30px BloggerSans;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    width: 300px;
+    margin-bottom: 30px; 
+    margin-left: 80px;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 100px;
+    height: 450px;
+    background: #000;
+}

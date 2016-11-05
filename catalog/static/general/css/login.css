@@ -1,0 +1,19 @@
+body {
+	background: rgba(181,197,243,.5);
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+.resetpassword {
+	float: right;
+}
+
+.error {
+	list-style: none;
+}

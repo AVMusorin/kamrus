@@ -8,5 +8,4 @@ urlpatterns = [
   url(r'^confirm/\w+/', registration_confirm, name = 'registration_confirm'),
   url(r'^reset_password/', reset_password, name = 'resetpassword'),
   url(r'^confirm_newpassword/\w+/', confirm_newpassword, name = 'confirmnewpassword'),
-  url(r'^success/', reset_password_success, name = 'resetpasswordsuccess'),
 ]

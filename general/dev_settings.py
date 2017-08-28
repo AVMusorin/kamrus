@@ -37,9 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalog',
     'login_logout',
-    'personal_area',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +82,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
@@ -125,9 +124,9 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'kamrusshop@gmail.com'
-EMAIL_HOST_PASSWORD = 'Ss143005'
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'kamrusshop@gmail.com'
+DEFAULT_FROM_EMAIL = ''
